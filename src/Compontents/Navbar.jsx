@@ -60,7 +60,7 @@ export default function Navbar() {
                             </a>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to={`/?q=${q}&language=hi`}>Hindi</Link></li>
-                                <li><Link className="dropdown-item" to={`/?q=${q}l&language=en`}>English</Link></li>
+                                <li><Link className="dropdown-item" to={`/?q=${q}&language=en`}>English</Link></li>
                             </ul>
                         </li>
 

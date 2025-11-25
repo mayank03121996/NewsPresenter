@@ -8,7 +8,7 @@ export default function Newsite(props){
                         <img src={props.image} className="card-img-top" alt="no image" />
                         <div className="card-body">
                             <h5 className="card-title">{props.title}</h5>
-                            <div className='source'>
+                            <div className="source">
                                 <p>{props.source}</p>
                                 <p>{new Date(props.date).toLocaleDateString()}</p>
                             </div>

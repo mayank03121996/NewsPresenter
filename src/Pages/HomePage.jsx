@@ -21,10 +21,10 @@ export default function HomePage() {
     )
 
     async function getAPIData(q, language) {
-        let response = await fetch(`https://newsapi.org/v2/everything?q=${q}&language=${language}&apiKey=c803afdb44fc4e2eb719704a025c8ca8`)
+        let response = await fetch(`https://newsdata.io/api/1/latest?q=${q}&language=${language}&apikey=pub_4d0737e327a149e98fa3cb16d6abaa99`)
         response = await response.json()
-        if (response.status === "ok") {
-            setArticles(response.articles)
+        if (response.status === "success") {
+            setArticles(response.results)
             setTotalResults(response.totalResults)
 
         }
@@ -42,10 +42,10 @@ export default function HomePage() {
                             key={index}
                             title={item.title}
                             description={item.description}
-                            url={item.url}
-                            image={item.urltoImage}
-                            date={item.publishedAt}
-                            source={item.source.name} />
+                            url={item.link}
+                            image={item.image_url}
+                            date={item.pubDate}
+                            source={item.source_name} />
                     })}
 
             </div>

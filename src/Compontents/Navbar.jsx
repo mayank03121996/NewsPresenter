@@ -38,7 +38,7 @@ export default function Navbar() {
                             <Link className="nav-link" to={`/?q=social&language=${language}`}>Social</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={`/?q=sharemarket&language=${language}`}>Share Market</Link>
+                            <Link className="nav-link" to={`/?q=Stock market&language=${language}`}>Stock Market</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to={`/?q=sports&language=${language}`}>Sports</Link>
